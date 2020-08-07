@@ -54,9 +54,7 @@ public class Controller implements Initializable {
         spm.setCellValueFactory(new PropertyValueFactory<Employee, Integer>("salary_per_month"));
         prof.setCellValueFactory(new PropertyValueFactory<Employee, String>("profession"));
 
-
-        emp_table.getColumns().addAll(eid, fname, lname, spm, prof);
-
+        
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/sardab_db", "root", "");
